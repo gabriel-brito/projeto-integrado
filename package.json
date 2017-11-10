@@ -4,7 +4,9 @@
   "description": "Repositório do projeto integrado da faculdade",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel --presets es2015 source -d public/js",
+    "lint": "./node_modules/.bin/eslint source/*.js",
+    "prepush": "npm run lint npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/gabriel-brito/projeto-integrado/issues"
   },
-  "homepage": "https://github.com/gabriel-brito/projeto-integrado#readme"
+  "homepage": "https://github.com/gabriel-brito/projeto-integrado#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husky": "^0.14.3"
+  }
 }
