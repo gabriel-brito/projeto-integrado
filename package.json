@@ -1,0 +1,24 @@
+{
+  "name": "projeto-integrado",
+  "version": "1.0.0",
+  "description": "Repositório do projeto integrado da faculdade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-brito/projeto-integrado.git"
+  },
+  "keywords": [
+    "university",
+    "finantial",
+    "js"
+  ],
+  "author": "Gabriel Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriel-brito/projeto-integrado/issues"
+  },
+  "homepage": "https://github.com/gabriel-brito/projeto-integrado#readme"
+}
