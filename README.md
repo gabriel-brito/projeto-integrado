@@ -1,5 +1,4 @@
 # PROJETO INTEGRADO II - WTS
----
 O consumo utilizando capital como meio se tornou algo incontrolável para a maioria dos indivíduos, ser consumista virou padrão de vida, o planejamento não é mais explorado de maneira efetiva, a inadimplência se tornou algo comum na sociedade atual. E a WTS deseja ajudar a melhorar este cenário drástico, oferecer possibilidades acessíveis que buscam conscientizar os usuários do aplicativo.
 
 ## 2 WTS
