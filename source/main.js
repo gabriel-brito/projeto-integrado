@@ -1,10 +1,10 @@
 // variáveis imutáveis
-const calcular = document.querySelector("#calcular"); //Botão
+const calcular = document.querySelector('#calcular'); //Botão
 
-const sonho = document.querySelector("#sonho");
-const salario = document.querySelector("#salario");
-const gasto = document.querySelector("#gasto");
-const resultado = document.querySelector("#resultado");
+const sonho = document.querySelector('#sonho');
+const salario = document.querySelector('#salario');
+const gasto = document.querySelector('#gasto');
+const resultado = document.querySelector('#resultado');
 
 // variáveis mutáveis;
 let liquidoMensal = 0;
@@ -21,20 +21,20 @@ function calculoFinal() {
       tempoMeses -= tempoAnos * 12;
     }
     if (liquidoMensal > 0) {
-      resultado.innerHTML = `Se você economizar ${liquidoMensal} por mês, em ${
+      resultado.innerHTML = `Se você economizar R$ ${liquidoMensal} por mês, em ${
         tempoAnos > 0
-          ? tempoAnos + " anos e " + tempoMeses + " meses"
-          : tempoMeses + " meses"
-      } você terá o suficiente para realizar seu sonho, e ainda sobrará ${(tempoAnos *
+          ? tempoAnos + ' ano(s) e ' + tempoMeses + ' mes(es)'
+          : tempoMeses + ' mes(es)'
+      } você terá o suficiente para realizar seu sonho, e ainda sobrará R$ ${(tempoAnos *
         12 +
         tempoMeses) *
         liquidoMensal -
         sonho.value}.`;
     } else {
-      resultado.innerHTML = `Você gasta mais que ganha :c`;
+      resultado.innerHTML = 'Você gasta mais que ganha :c';
     }
   } else {
-    resultado.innerHTML = `Nenhum valor pode ser negativo.`;
+    resultado.innerHTML = 'Nenhum valor pode ser negativo.';
   }
 }
 

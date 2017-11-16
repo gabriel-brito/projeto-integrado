@@ -1,0 +1,13 @@
+.navbar-brand {
+  padding: 10px;
+}
+#main-container {
+  padding-top: 75px;
+}
+#calcular {
+  padding: 7px 25px;
+  margin-bottom: 15px;
+}
+#resultado-row {
+  margin-top: 20px;
+}
