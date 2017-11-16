@@ -34,10 +34,13 @@ Almeja o sucesso na área financeira e afins, buscando apresentar os melhores re
 
 > Nada mais, nada menos que eficiência como o último dos valores. Pois aqui seu objetivo já foi concluído.
 
-## 2 - OBJETIVO DO PRODUTO
-A WTS vem trabalhando arduamente para a elaboração de algo capaz de atender as necessidades dos consumidores a gerir os recursos próprios ou do negócio. Por meio de um sistema objetivo, o aplicativo WTF Financial Control consegue traçar um planejamento de gerenciamento do capital e direcioná-lo para determinado fim, e se este será utilizado a curto, médio ou longo prazo, estabelecendo dicas eficientes de rentabilidade.
+## 2 - Objetivo do produto
+A WTS vem trabalhando eficientemente para a elaboração de algo capaz de atender as necessidades dos consumidores a gerir os seus recursos fincanceiros. Por meio de um sistema objetivo, o aplicativo WTF Financial Control consegue traçar um planejamento de gerenciamento do capital e direcioná-lo para determinado fim.
 
 ### 2.1 - Público Alvo
-O sistema é direcionado para consumidores que se enquadram no cenário de inadimplente ou que buscam elevar suas economias. A faixa etária de utilizadores pode ser considerada flexível, já que vai de adolescentes que já iniciam seus primeiros passos no meio financeiro até idosos, pois se trata de um sistema acessível e simples de utilizar.
+O sistema é direcionado para consumidores que querem trocar o modo automático de vida para o modo manual, concretizando, assim, seus sonhos!
+
+### 2.2 - Faixa etária
+A faixa etária é livre para todos. Pois até mesmo a criança mais jovem pode aprender a poupar para realizar seus sonhos futuros!
 
 Clique **[aqui](https://wts-financial-control.herokuapp.com/)** para conhecer a versão funcional da aplicação.
