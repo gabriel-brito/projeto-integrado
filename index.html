@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>WTS Financial Control</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<link href="./branch-marcos/css/style.css" rel="stylesheet">
-<style type="text/css">
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .container input[type=text] {
-      text-align: right;
-  }
-  h2 {
-      text-align: center;
-  }
-</style>
-</head>
-
-<body>
-    <header class="nav">
-        <h2>WTS Financial Control</h2>
-    </header>
-    <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="form-group">          
-            <label class="control-label">Qual o custo do seu sonho?</label>
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-              <input type="number" min="0" placeholder="" class="form-control" id="sonho">
+  <head>    
+    <title>WTS Financial Control</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container container-fluid col-xs-12" id="main-container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img src="img/wts_logo.png" width="30px" height="30px">
+            </a>
+            <p class="navbar-text">
+              WTS Financial Control
+            </p>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid col-md-8 col-md-offset-2 col-xs-12">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">          
+              <label class="control-label">Qual o custo do seu sonho?</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                <input type="number" min="0" placeholder="" class="form-control" id="sonho">
+              </div>
             </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">          
+              <label class="control-label">Qual o seu salário?</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                <input type="number" min="0" class="form-control" id="salario">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <div class="form-group">          
+                <label class="control-label">Qual o seu gasto mensal?</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                  <input type="number" min="0" class="form-control" id="gasto">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    <div class="col-sm-4">
-      <div class="form-group">          
-        <label class="control-label">Qual o seu salário?</label>
-        <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-          <input type="number" min="0" class="form-control" id="salario">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+            <button class="btn btn-primary col-xs-12" id="calcular">Calcular</button>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="form-group">
-        <div class="form-group">          
-          <label class="control-label">Qual o seu gasto mensal?</label>
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-            <input type="number" min="0" class="form-control" id="gasto">
+        <div class="row" id="resultado-row">
+          <div class="col-xs-12">
+            <div class="well" id="resultado">
+              Calcule quanto tempo você vai precisar pra realiza-lo!
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
-      <button class="btn btn-primary col-xs-12" id="calcular">Calcular</button>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="well">
-        <p id="resultado">
-          Calcule quanto tempo você vai precisar pra realiza-lo!
-        </p>
-      </div>
-    </div>
-  </div>
-  </div>
-
-<script src="./public/js/main.js"></script>
-</body>
+    <script src="./public/js/main.js"></script>
+  </body>
 </html>
