@@ -23,7 +23,7 @@ function calculoFinal() {
       tempoMeses -= tempoAnos * 12;
     }
     if (liquidoMensal > 0) {
-      resultado.innerHTML = 'Se voc\xEA economizar ' + liquidoMensal + ' por m\xEAs, em ' + (tempoAnos > 0 ? tempoAnos + ' anos e ' + tempoMeses + ' meses' : tempoMeses + ' meses') + ' voc\xEA ter\xE1 o suficiente para realizar seu sonho, e ainda sobrar\xE1 ' + ((tempoAnos * 12 + tempoMeses) * liquidoMensal - sonho.value) + '.';
+      resultado.innerHTML = 'Se voc\xEA economizar R$ ' + liquidoMensal + ' por m\xEAs, em ' + (tempoAnos > 0 ? tempoAnos + ' ano(s) e ' + tempoMeses + ' mes(es)' : tempoMeses + ' mes(es)') + ' voc\xEA ter\xE1 o suficiente para realizar seu sonho, e ainda sobrar\xE1 R$ ' + ((tempoAnos * 12 + tempoMeses) * liquidoMensal - sonho.value) + '.';
     } else {
       resultado.innerHTML = 'Você gasta mais que ganha :c';
     }

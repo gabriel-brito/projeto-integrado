@@ -21,11 +21,11 @@ function calculoFinal() {
       tempoMeses -= tempoAnos * 12;
     }
     if (liquidoMensal > 0) {
-      resultado.innerHTML = `Se você economizar ${liquidoMensal} por mês, em ${
+      resultado.innerHTML = `Se você economizar R$ ${liquidoMensal} por mês, em ${
         tempoAnos > 0
-          ? tempoAnos + ' anos e ' + tempoMeses + ' meses'
-          : tempoMeses + ' meses'
-      } você terá o suficiente para realizar seu sonho, e ainda sobrará ${(tempoAnos *
+          ? tempoAnos + ' ano(s) e ' + tempoMeses + ' mes(es)'
+          : tempoMeses + ' mes(es)'
+      } você terá o suficiente para realizar seu sonho, e ainda sobrará R$ ${(tempoAnos *
         12 +
         tempoMeses) *
         liquidoMensal -
