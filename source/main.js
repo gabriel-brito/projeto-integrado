@@ -1,5 +1,5 @@
 // variáveis imutáveis
-const calcular = document.querySelector('#calcular'); //Botão
+const calcular = document.querySelector('#calcular'); // botão
 
 const sonho = document.querySelector('#sonho');
 const salario = document.querySelector('#salario');
@@ -9,6 +9,10 @@ const resultado = document.querySelector('#resultado');
 // variáveis mutáveis;
 let liquidoMensal = 0;
 
+function alternarClasses(elemento, classe) {
+  elemento.classList.remove('alert-info', 'alert-warning', 'alert-success', 'alert-danger');
+  elemento.classList.add(classe);
+}
 function calculoFinal() {
   let tempoMeses = 0;
   let tempoAnos = 0;
@@ -22,20 +26,18 @@ function calculoFinal() {
     }
     if (liquidoMensal > 0) {
       resultado.innerHTML = `Se você economizar R$ ${liquidoMensal} por mês, em ${
-        tempoAnos > 0
-          ? tempoAnos + ' ano(s) e ' + tempoMeses + ' mes(es)'
-          : tempoMeses + ' mes(es)'
-      } você terá o suficiente para realizar seu sonho, e ainda sobrará R$ ${(tempoAnos *
-        12 +
-        tempoMeses) *
-        liquidoMensal -
-        sonho.value}.`;
+        tempoAnos > 0 ? `${tempoAnos} ano(s) e ${tempoMeses} mes(es)` : `${tempoMeses} mes(es)`
+      } você terá o suficiente para realizar seu sonho, e ainda sobrará R$ ${
+        (((tempoAnos * 12) + tempoMeses) * liquidoMensal) - sonho.value
+      }.`;
+      alternarClasses(resultado, 'alert-success');
     } else {
       resultado.innerHTML = 'Você gasta mais que ganha :c';
+      alternarClasses(resultado, 'alert-warning');
     }
   } else {
     resultado.innerHTML = 'Nenhum valor pode ser negativo.';
+    alternarClasses(resultado, 'alert-danger');
   }
 }
-
 calcular.onclick = calculoFinal;

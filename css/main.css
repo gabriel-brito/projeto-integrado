@@ -1,13 +1,22 @@
-.navbar-brand {
-  padding: 10px;
+header, header.container {
+  padding: 0;
+}
+.navbar-toggler {
+  padding: 8.2px;
+}
+.navbar li {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 #main-container {
-  padding-top: 75px;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#main-container input {
+  text-align: right;
 }
 #calcular {
   padding: 7px 25px;
   margin-bottom: 15px;
-}
-#resultado-row {
-  margin-top: 20px;
 }
