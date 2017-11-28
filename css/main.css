@@ -1,4 +1,4 @@
-header, header.container {
+header, header.container-fluid, footer.container-fluid {
   padding: 0;
 }
 .navbar-toggler {
@@ -10,8 +10,24 @@ header, header.container {
 }
 #main-container {
   padding-top: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 35px;
+  margin-bottom: -25px;
+}
+.jumbotron {
+  padding-bottom: 32px;
+}
+.jumbotron .text-right {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.card {
+  margin-bottom: 32px;
+}
+#valores {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 #main-container input {
   text-align: right;

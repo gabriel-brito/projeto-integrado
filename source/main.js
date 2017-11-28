@@ -13,6 +13,7 @@ function alternarClasses(elemento, classe) {
   elemento.classList.remove('alert-info', 'alert-warning', 'alert-success', 'alert-danger');
   elemento.classList.add(classe);
 }
+
 function calculoFinal() {
   let tempoMeses = 0;
   let tempoAnos = 0;
@@ -40,4 +41,5 @@ function calculoFinal() {
     alternarClasses(resultado, 'alert-danger');
   }
 }
+
 calcular.onclick = calculoFinal;
